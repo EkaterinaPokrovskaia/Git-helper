@@ -661,7 +661,7 @@ Git сообщит об этом с помощью статуса modified: фа
 
 ```mermaid
 graph LR;
-  untracked -- "git add" --> staged + tracked;
+  untracked -- "git add" --> staged/tracked;
   staged    -- "git commit"     --> tracked/comitted;
   modified  -- "git add"  --> staged/tracked 
   staged -- "file changed" --> modified/tracked
