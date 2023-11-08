@@ -663,8 +663,8 @@ Git сообщит об этом с помощью статуса modified: фа
 graph LR;
   untracked -- "git add" --> staged(+ tracked);
   staged    -- "git commit"     --> tracked/comitted;
-  modified  -- "git add"  --> staged(+tracked)
-  staged -- "file changed" --> modified(+tracked)
+  modified  -- "git add"  --> staged/tracked 
+  staged -- "file changed" --> modified/tracked
 
 %% «изменён» → «добавлен в список на коммит» → «закоммичен» → «изменён» → и так далее.
 ```
